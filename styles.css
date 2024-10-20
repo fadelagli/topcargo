@@ -110,6 +110,7 @@ nav {
   font-size: 1.5rem;
   color: var(--white);
   cursor: pointer;
+  display: block;
 }
 
 .nav__links {
@@ -669,7 +670,7 @@ footer {
   text-align: center;
 }
 
-@media (width > 540px) {
+@media (min-width: 540px) {
   .story__grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -679,7 +680,7 @@ footer {
   }
 }
 
-@media (width > 768px) {
+@media (min-width: 768px) {
   nav {
     position: static;
     padding: 2rem 1rem 0;
@@ -808,7 +809,7 @@ footer {
   }
 }
 
-@media (width > 1024px) {
+@media (min-width: 1024px) {
   .range__grid {
     gap: 1.5rem;
   }
