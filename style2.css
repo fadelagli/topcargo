@@ -1,0 +1,131 @@
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 40px;
+    background-color: #ff9801;
+    padding: 20px 0;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .contact-header h2 {
+    font-size: 2.5rem;
+    color: black;
+  }
+  
+  .contact-header p {
+    font-size: 1.2rem;
+    color: black;
+    margin-top: 10px;
+  }
+
+    /* Container for the flag grid */
+    .country__container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+
+    /* Card style for each country */
+    .country__card {
+      width: 200px;
+      margin: 15px;
+      text-align: center;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .country__card:hover {
+      transform: scale(1.05);
+    }
+
+    /* Image style for country flag */
+    .country__card img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+    }
+
+    /* Country name */
+    .country__card h3 {
+      font-size: 1.2rem;
+      color: black;
+      padding: 10px;
+      background-color: #ff9801;
+      color: white;
+    }
+
+    /* Responsive styling for mobile screens */
+    @media (max-width: 768px) {
+      .country__card {
+        width: 45%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .country__card {
+        width: 90%;
+      }
+    }
+  
+
+    .section__header2 {
+        text-align: center;
+        font-size: 2.5rem;
+        color: #333;
+        margin: 20px 0;
+      }
+      
+      /* For tablets (medium devices) */
+      @media (max-width: 768px) {
+        .section__header2 {
+          font-size: 2rem;
+        }
+      }
+      
+      /* For mobile phones (small devices) */
+      @media (max-width: 480px) {
+        .section__header2 {
+          font-size: 1.5rem;
+        }
+      }
+      
+
+      /* Scroll to Top Button */
+#scrollTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position */
+    bottom: 20px; /* Place it at the bottom */
+    right: 30px; /* Place it 30px from the right */
+    z-index: 99; /* Make sure it does not overlap other elements */
+    font-size: 18px; /* Set a font size */
+    background-color: #ff9801; /* Orange background */
+    color: white; /* White text */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    cursor: pointer; /* Pointer/hand icon on hover */
+    padding: 15px; /* Add some padding */
+    border-radius: 10px; /* Rounded corners */
+    transition: opacity 0.4s ease; /* Smooth transition */
+  }
+  
+  /* Hover effects */
+  #scrollTopBtn:hover {
+    background-color: #e68901; /* Darker orange on hover */
+  }
+  
+  /* Show the button when the user scrolls down */
+  @media (max-width: 768px) {
+    #scrollTopBtn {
+      padding: 10px;
+      font-size: 14px;
+      right: 20px;
+      bottom: 15px;
+    }
+  }
+  

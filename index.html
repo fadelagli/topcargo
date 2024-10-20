@@ -12,327 +12,351 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="styles.css" />
-    <title>Web Design Mastery | RENTAL</title>
+    <link rel="stylesheet" href="style2.css">
+    <title>Top Cargo International</title>
   </head>
   <body>
     <header>
       <nav>
         <div class="nav__header">
-          <div class="nav__logo">
-            <a href="#">RENTAL</a>
+          <div class="nav__logo" style="display: inline-block;">
+            <a href="#">
+              <img src="assets/top-cargo-logo.png" alt="Top Cargo Logo" style="width: 52px; height: auto;" />
+            </a>
           </div>
+          
           <div class="nav__menu__btn" id="menu-btn">
             <i class="ri-menu-line"></i>
           </div>
         </div>
         <ul class="nav__links" id="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#rent">Rent</a></li>
-          <li><a href="#ride">Ride</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#home">Accueil</a></li>
+          <li><a href="#about">Nos Services</a></li>
+          <li><a href="#process">Notre Processus</a></li>
+          <li><a href="#pays">Pays d'expéditions</a></li>
+          <li><a href="#contact">Contacts</a></li>
         </ul>
         <div class="nav__btn">
-          <button class="btn">Get Started</button>
+          <a href="tel:+8613539411434" target="_blank">
+            <button class="btn">Appelez Notre Base en Chine</button>
+        </a>
+        
         </div>
       </nav>
       <div class="header__container" id="home">
-        <h1>PREMIUM CAR RENTAL</h1>
-        <form action="/">
-          <div class="input__group">
-            <label for="location">Pick up & Return location</label>
-            <input
-              type="text"
-              name="location"
-              id="location"
-              placeholder="Dallas, Texas"
-            />
-          </div>
-          <div class="input__group">
-            <label for="start">Start</label>
-            <input
-              type="text"
-              name="start"
-              id="start"
-              placeholder="Aug 16, 10:00 AM"
-            />
-          </div>
-          <div class="input__group">
-            <label for="stop">Stop</label>
-            <input
-              type="text"
-              name="stop"
-              id="stop"
-              placeholder="Aug 18, 10:00 PM"
-            />
-          </div>
-          <button class="btn">
-            <i class="ri-search-line"></i>
-          </button>
-        </form>
-        <img src="assets/header.png" alt="header" />
+        <h1>TOP CARGO EXPÉDITION PREMIUM</h1>
+        
+        <img src="assets/plane2.png" alt="header" style="border-radius: 50px;" />
       </div>
+      
       <a href="#about" class="scroll__down">
         <i class="ri-arrow-down-line"></i>
       </a>
     </header>
+    <!-----------Video Banner Start-------------------->
+ <video width="100%" height="100%" loop muted autoplay="autoplay">
+  <source src="./assets/VID.mp4" type="video/mp4">
+</video>
+<!-------------Video Banner End--------------------->
+    <div id="home" style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; background-color: #000; padding: 20px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); border-style: double;">
+      <div class="info__group" style="text-align: center; margin-right: 20px;">
+        <label style="font-weight: bold; font-size: 1.2rem; color: #fff;">Lieu de dépôt & destination:</label>
+        <p style="font-size: 1.1rem; color: #fff;">Shanghai, via Afrique</p>
+      </div>
+    
+      <div class="info__group" style="text-align: center; margin-right: 20px;">
+        <label style="font-weight: bold; font-size: 1.2rem; color: #fff;">Méthode d'expédition:</label>
+        <p style="font-size: 1.1rem; color: #fff;">Fret aérien express & super express; Fret maritime</p>
+      </div>
+    
+      <div class="info__group" style="text-align: center; margin-right: 20px;">
+        <label style="font-weight: bold; font-size: 1.2rem; color: #fff;">Dépôt du colis:</label>
+        <p style="font-size: 1.1rem; color: #fff;">Le colis est expédié 24h après</p>
+      </div>
+    
+      <button class="btn" style="background-color: #fff; color: #000; padding: 10px; border: none; border-radius: 50%; cursor: pointer;"
+      onclick="window.location.href='tel:+8613539411434';">
+      <i class="ri-phone-line" style="font-size: 1.5rem;"></i>
+  </button>
+  
+    </div> 
 
     <section class="section__container range__container" id="about">
-      <h2 class="section__header">WIDE RANGE OF VEHICLES</h2>
+      <h2 class="section__header">NOS EXPÉDITIONS VERS L'AFRIQUE</h2>
       <div class="range__grid">
         <div class="range__card">
-          <img src="assets/range-1.jpg" alt="range" />
+          <img src="assets/achat.png" alt="range" />
           <div class="range__details">
-            <h4>CARS</h4>
+            <h4>B2B Achetez des articles en Chine</h4>
             <a href="#"><i class="ri-arrow-right-line"></i></a>
           </div>
         </div>
         <div class="range__card">
-          <img src="assets/range-2.jpg" alt="range" />
+          <img src="assets/fret-ar.png" alt="range" />
           <div class="range__details">
-            <h4>SUVS</h4>
+            <h4>Fret Aérien Express</h4>
             <a href="#"><i class="ri-arrow-right-line"></i></a>
           </div>
         </div>
         <div class="range__card">
-          <img src="assets/range-3.jpg" alt="range" />
+          <img src="assets/fret-mar.png" alt="range" />
           <div class="range__details">
-            <h4>VANS</h4>
+            <h4>Fret Maritime</h4>
             <a href="#"><i class="ri-arrow-right-line"></i></a>
           </div>
         </div>
         <div class="range__card">
-          <img src="assets/range-4.jpg" alt="range" />
+          <img src="assets/fret-se.png" alt="range" />
           <div class="range__details">
-            <h4>ELECTRIC</h4>
+            <h4>Fret Aérien Super Express</h4>
+            
             <a href="#"><i class="ri-arrow-right-line"></i></a>
           </div>
         </div>
+        <div class="range__card">
+          <img src="assets/livreur.png" alt="range" />
+          <div class="range__details">
+            <h4>Service de Livraison de Colis</h4>
+            <a href="#"><i class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+        <div class="range__card">
+          <img src="assets/suivi-coli.png" alt="range" />
+          <div class="range__details">
+            <h4>B2B Achetez des articles en Chine</h4>
+            <a href="#"><i class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+       
       </div>
     </section>
 
     <section class="section__container location__container" id="rent">
       <div class="location__image">
-        <img src="assets/location.png" alt="location" />
+        <img src="assets/fret-m.png" style="border-radius: 40px;" alt="location" />
       </div>
       <div class="location__content">
-        <h2 class="section__header">FIND CAR IN YOUR LOCATIONS</h2>
+        <h2 class="section__header">LE FRET MARITIME: SOLUTION ÉCONOMIQUE</h2>
         <p>
-          Discover the perfect vehicle tailored to your needs, wherever you are.
-          Our 'Find Car in Your Locations' feature allows you to effortlessly
-          search and select from our premium fleet available near you. Whether
-          you're looking for a luxury sedan, a spacious SUV, or a sporty
-          convertible, our easy-to-use tool ensures you find the ideal car for
-          your journey. Simply enter your location, and let us connect you with
-          top-tier vehicles ready for rental.
+          Le fret maritime est la solution idéale pour les entreprises et les particuliers
+          qui souhaitent expédier de gros volumes à un coût réduit. Avec Top Cargo, vous bénéficiez d'un service fiable
+          pour l'envoi de marchandises volumineuses entre la Chine, Dubaï et plusieurs destinations en Afrique.
+          Bien que le délai de livraison soit de 30 à 45 jours, cette option permet de réduire
+          considérablement les coûts pour le transport de grandes quantités de marchandises.
+          C’est une solution économique parfaite pour les importateurs réguliers qui cherchent à optimiser
+          leurs budgets tout en assurant une livraison sécurisée de leurs colis.
         </p>
         <div class="location__btn">
-          <button class="btn">Find a Location</button>
+          <button class="btn">En savoir plus sur le Fret Maritime</button>
+        </div>
+      </div>
+    </section>
+    <br> <br> <br>
+    <section class="section__container location__container" id="rent">
+      <div class="location__image">
+        <img src="assets/fret-a.png" style="border-radius: 40px;" alt="location" />
+      </div>
+      <div class="location__content">
+        <h2 class="section__header">LE FRET AÉRIEN: RAPIDITÉ ET EFFICACITÉ</h2>
+        <p>
+          Le fret aérien est la solution privilégiée pour les envois urgents et à haute valeur ajoutée. Avec Top Cargo, vos colis sont
+          livrés en 4 à 12 jours entre la Chine, Dubaï, et divers pays d'Afrique. C'est l'option parfaite pour ceux
+          qui recherchent rapidité et sécurité pour des marchandises sensibles ou des envois qui ne peuvent pas attendre. 
+          Bien que le coût soit plus élevé que le fret maritime, le gain de temps et la gestion efficace de vos colis justifient
+          largement cette solution pour les envois prioritaires.
+        </p>
+        <div class="location__btn">
+          <button class="btn">En savoir plus sur le Fret Aérien</button>
         </div>
       </div>
     </section>
 
-    <section class="select__container" id="ride">
-      <h2 class="section__header">PICK YOUR DREAM CAR TODAY</h2>
-      <!-- Slider main container -->
-      <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">
-            <div class="select__card">
-              <img src="assets/select-1.png" alt="select" />
-              <div class="select__info">
-                <div class="select__info__card">
-                  <span><i class="ri-speed-up-line"></i></span>
-                  <h4>200 <span>km/h</span></h4>
-                </div>
-                <div class="select__info__card">
-                  <span><i class="ri-settings-5-line"></i></span>
-                  <h4>6 <span>speed</span></h4>
-                </div>
-                <div class="select__info__card">
-                  <span><i class="ri-roadster-line"></i></span>
-                  <h4>5 <span>seats</span></h4>
-                </div>
-                <div class="select__info__card">
-                  <span><i class="ri-signpost-line"></i></span>
-                  <h4>15 <span>milage</span></h4>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="select__card">
-              <img src="assets/select-2.png" alt="select" />
-              <div class="select__info">
-                <div class="select__info__card">
-                  <span><i class="ri-speed-up-line"></i></span>
-                  <h4>215 <span>km/h</span></h4>
-                </div>
-                <div class="select__info__card">
-                  <span><i class="ri-settings-5-line"></i></span>
-                  <h4>6 <span>speed</span></h4>
-                </div>
-                <div class="select__info__card">
-                  <span><i class="ri-roadster-line"></i></span>
-                  <h4>5 <span>seats</span></h4>
-                </div>
-                <div class="select__info__card">
-                  <span><i class="ri-signpost-line"></i></span>
-                  <h4>16 <span>milage</span></h4>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="select__card">
-              <img src="assets/select-3.png" alt="select" />
-              <div class="select__info">
-                <div class="select__info__card">
-                  <span><i class="ri-speed-up-line"></i></span>
-                  <h4>306 <span>km/h</span></h4>
-                </div>
-                <div class="select__info__card">
-                  <span><i class="ri-settings-5-line"></i></span>
-                  <h4>6 <span>speed</span></h4>
-                </div>
-                <div class="select__info__card">
-                  <span><i class="ri-roadster-line"></i></span>
-                  <h4>5 <span>seats</span></h4>
-                </div>
-                <div class="select__info__card">
-                  <span><i class="ri-signpost-line"></i></span>
-                  <h4>12 <span>milage</span></h4>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="select__card">
-              <img src="assets/select-4.png" alt="select" />
-              <div class="select__info">
-                <div class="select__info__card">
-                  <span><i class="ri-speed-up-line"></i></span>
-                  <h4>350 <span>km/h</span></h4>
-                </div>
-                <div class="select__info__card">
-                  <span><i class="ri-settings-5-line"></i></span>
-                  <h4>6 <span>speed</span></h4>
-                </div>
-                <div class="select__info__card">
-                  <span><i class="ri-roadster-line"></i></span>
-                  <h4>2 <span>seats</span></h4>
-                </div>
-                <div class="select__info__card">
-                  <span><i class="ri-signpost-line"></i></span>
-                  <h4>08 <span>milage</span></h4>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="select__card">
-              <img src="assets/select-5.png" alt="select" />
-              <div class="select__info">
-                <div class="select__info__card">
-                  <span><i class="ri-speed-up-line"></i></span>
-                  <h4>254 <span>km/h</span></h4>
-                </div>
-                <div class="select__info__card">
-                  <span><i class="ri-settings-5-line"></i></span>
-                  <h4>6 <span>speed</span></h4>
-                </div>
-                <div class="select__info__card">
-                  <span><i class="ri-roadster-line"></i></span>
-                  <h4>5 <span>seats</span></h4>
-                </div>
-                <div class="select__info__card">
-                  <span><i class="ri-signpost-line"></i></span>
-                  <h4>10 <span>milage</span></h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <form action="/" class="select__form">
-        <div class="select__price">
-          <span><i class="ri-price-tag-3-line"></i></span>
-          <div><span id="select-price">225</span> /day</div>
-        </div>
-        <div class="select__btns">
-          <button class="btn">View Details</button>
-          <button class="btn">Rent Now</button>
-        </div>
-      </form>
-    </section>
-
-    <section class="section__container story__container">
-      <h2 class="section__header">STORIES BEHIND THE WHEEL</h2>
+    <section class="section__container story__container" id="process">
+      <h2 class="section__header">DÉCOUVREZ LE PROCESSUS CHEZ TOP CARGO</h2>
       <div class="story__grid">
+        <!-- Étape 1 -->
         <div class="story__card">
           <div class="story__date">
-            <span>12</span>
+            <span>01</span>
             <div>
-              <p>January</p>
-              <p>2024</p>
+              <p>Visite du site</p>
+              <p>Chatbot IA</p>
             </div>
           </div>
-          <h4>Adventures on the Open Road</h4>
+          <h4>Accueil par Notre Chatbot IA</h4>
           <p>
-            Join us as we dive into the exhilarating stories of travelers who
-            embarked on unforgettable journeys with PREMIUM CAR RENTAL.
-          </p>
-          <img src="assets/story-1.jpg" alt="story" />
+            Soyez accueilli par notre assistant intelligent, prêt à vous guider à
+            travers nos services et à vous aider à trouver la meilleure solution de
+            fret pour vos besoins.
+          </p> <br> 
+          <img src="assets/chatbot.png" alt="Chatbot IA" />
         </div>
+        
+        <!-- Étape 2 -->
+        <div class="story__card">
+          <div class="story__date">
+            <span>02</span>
+            <div>
+              <p>Sélection du pays</p>
+              <p>de service</p>
+            </div>
+          </div>
+          <h4>Identifiez Votre Pays de Service</h4>
+          <p>
+            Choisissez le pays où vous avez besoin de soutien logistique, tel que le
+            Togo, le Niger, ou la Côte d'Ivoire, et nous vous mettrons en contact
+            avec des experts locaux pour gérer votre cargaison.
+          </p>
+          <img src="assets/afrique.png" alt="Sélection du pays" />
+        </div>
+        
+        <!-- Étape 3 -->
+        <div class="story__card">
+          <div class="story__date">
+            <span>03</span>
+            <div>
+              <p>Options de</p>
+              <p>fret</p>
+            </div>
+          </div>
+          <h4>Sélectionnez Votre Service de Fret</h4>
+          <p>
+            Si vous ressentez le besoin d'optez pour solution de fret aérien rapide et fiable 
+            ,Top Cargo propose la solution idéale adaptée à vos
+            exigences.
+          </p> <br>
+          <img src="assets/fret 2.png" alt="Service de fret" />
+        </div>
+        <!-- Étape 4 -->
         <div class="story__card">
           <div class="story__date">
             <span>04</span>
             <div>
-              <p>March</p>
-              <p>2024</p>
+              <p>Options de</p>
+              <p>fret</p>
             </div>
           </div>
-          <h4>Luxury and Comfort: Experiences</h4>
+          <h4>Sélectionnez Votre Service de Fret</h4>
           <p>
-            In this series, we highlight the luxurious touches, unparalleled
-            comfort, and exceptional service that make every ride.
-          </p>
-          <img src="assets/story-2.jpg" alt="story" />
+           Et si votre solution se trouve dans un fret maritime économique rapide et fiable ou d'un transport, Top Cargo propose la solution idéale adaptée à vos
+            exigences.
+          </p> <br>
+          <img src="assets/fret 1.png" alt="Service de fret" />
         </div>
+        
+        <!-- Étape 5 -->
         <div class="story__card">
           <div class="story__date">
-            <span>18</span>
+            <span>05</span>
             <div>
-              <p>June</p>
-              <p>2024</p>
+              <p>Options de</p>
+              <p>contact</p>
             </div>
           </div>
-          <h4>Cars that Adapt to Your Lifestyle</h4>
+          <h4>Communiquez avec Nos Experts</h4>
           <p>
-            Read about how our versatile vehicles have seamlessly integrated
-            into the lives of professionals and families alike.
-          </p>
-          <img src="assets/story-3.jpg" alt="story" />
+            Discutez avec notre équipe via le chatbot IA, par WhatsApp ou via notre
+            formulaire de contact pour échanger sur vos besoins avec des
+            professionnels de la logistique.
+          </p> <br>
+          <img src="assets/expert-logistic.png" alt="Contact avec des experts" />
+        </div>
+        
+        <!-- Étape 6 -->
+        <div class="story__card">
+          <div class="story__date">
+            <span>06</span>
+            <div>
+              <p>Proposition</p>
+              <p>Mises à jour</p>
+            </div>
+          </div>
+          <h4>Proposition Personnalisée</h4>
+          <p>
+            Obtenez une proposition détaillée pour vos besoins en fret maritime et, ou aérienne et restez
+            informé tout au long du processus d'expédition , ne vous inquiétez pas.
+          </p> <br>
+          <img src="assets/proposal.png" alt="Proposition et mises à jour" />
         </div>
       </div>
     </section>
+    
 
-    <section class="banner__container">
+    <section class="banner__container" id="pays">
+      <h2 class="section__header2">NOS PAYS D'EXPÉDITIONS</h2>
+      <br> <br>
       <div class="banner__wrapper">
-        <img src="assets/banner-1.png" alt="banner" />
-        <img src="assets/banner-2.png" alt="banner" />
-        <img src="assets/banner-3.png" alt="banner" />
-        <img src="assets/banner-4.png" alt="banner" />
-        <img src="assets/banner-5.png" alt="banner" />
-        <img src="assets/banner-6.png" alt="banner" />
-        <img src="assets/banner-7.png" alt="banner" />
-        <img src="assets/banner-8.png" alt="banner" />
-        <img src="assets/banner-9.png" alt="banner" />
-        <img src="assets/banner-10.png" alt="banner" />
+        <div class="country">
+          <img src="assets/china.png" alt="China Flag" />
+          <p>Chine</p>
+        </div>
+        <div class="country">
+          <img src="assets/togo.png" alt="Togo Flag" />
+          <p>Togo</p>
+        </div>
+        <div class="country">
+          <img src="assets/ci.png" alt="Ivory Coast Flag" />
+          <p>Côte d'Ivoire</p>
+        </div>
+        <div class="country">
+          <img src="assets/niger.png" alt="Niger Flag" />
+          <p>Niger</p>
+        </div>
+        <div class="country">
+          <img src="assets/china.png" alt="China Flag" />
+          <p>Chine</p>
+        </div>
+        <div class="country">
+          <img src="assets/togo.png" alt="Togo Flag" />
+          <p>Togo</p>
+        </div>
+        <div class="country">
+          <img src="assets/ci.png" alt="Ivory Coast Flag" />
+          <p>Côte d'Ivoire</p>
+        </div>
+        <div class="country">
+          <img src="assets/niger.png" alt="Niger Flag" />
+          <p>Niger</p>
+        </div>
       </div>
     </section>
-
+    
+    <header class="contact-header" id="contact">
+      <h2>Contactez-Nous via WhatsApp</h2>
+      <p>Choisissez votre pays pour discuter avec un de nos représentants via WhatsApp.</p>
+    </header>
+    <section class="country__container">
+      
+      <div class="country__card">
+        <a href="https://wa.me/008613539411434" target="_blank">
+          <img src="https://flagcdn.com/w320/cn.png" alt="China Flag">
+          <h3>Chine</h3>
+        </a>
+      </div>
+      <!-- Togo -->
+      <div class="country__card">
+        <a href="https://wa.me/22898309437" target="_blank">
+          <img src="https://flagcdn.com/w320/tg.png" alt="Togo Flag">
+          <h3>Togo</h3>
+        </a>
+      </div>
+  
+      <!-- Niger -->
+      <div class="country__card">
+        <a href="https://wa.me/22774222218" target="_blank">
+          <img src="https://flagcdn.com/w320/ne.png" alt="Niger Flag">
+          <h3>Niger</h3>
+        </a>
+      </div>
+  
+      <!-- Côte d'Ivoire -->
+      <div class="country__card">
+        <a href="https://wa.me/2250717861551" target="_blank">
+          <img src="https://flagcdn.com/w320/ci.png" alt="Ivory Coast Flag">
+          <h3>Côte d'Ivoire</h3>
+        </a>
+      </div>
+    </section>
     <section class="download">
       <div class="section__container download__container">
         <div class="download__content">
@@ -408,12 +432,15 @@
         </div>
       </div>
       <div class="footer__bar">
-        Copyright © 2024 Web Design Mastery. All rights reserved.
+        Copyright © 2024 Top Cargo All rights reserved. Powered By Fadel AGLI Software Engineer
       </div>
     </footer>
-
+     <!-- Scroll to Top Button -->
+  <button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">&#8679;</button>
+     
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
+   
   </body>
 </html>
