@@ -200,6 +200,86 @@
   }
 }
 
+/*    ...............................................  */ 
 
+ /* General Styling for Header Download Section */
+.download-header {
+  background-color: #f7a700; /* Orange background */
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 15px;
+  color: #fff;
+}
 
-  
+.download-header h2 {
+  font-size: 2.5rem;
+  color: #000; /* Black text */
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.download-header p {
+  font-size: 1.2rem;
+  color: #000; /* Black text */
+  margin-bottom: 30px;
+}
+
+/* Button Styling */
+.download-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.download-btn {
+  background-color: #000; /* Black background */
+  color: #f7a700; /* Matching orange text */
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: auto;
+}
+
+.download-btn:hover {
+  background-color: #fff;
+  color: #f7a700; /* Reverse the colors on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .download-buttons {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .download-header h2 {
+    font-size: 2.2rem;
+  }
+
+  .download-header p {
+    font-size: 1rem;
+  }
+
+  .download-btn {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .download-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .download-header p {
+    font-size: 0.9rem;
+  }
+
+  .download-btn {
+    font-size: 0.9rem;
+    padding: 12px 25px;
+  }
+}

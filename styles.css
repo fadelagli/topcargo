@@ -520,55 +520,7 @@ nav {
   }
 }
 
-.download {
-  position: relative;
-  isolation: isolate;
-  padding-inline: 1rem;
-  overflow: hidden;
-}
-
-.download::before {
-  position: absolute;
-  content: "";
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: calc(50% - 5rem);
-  background-color: var(--text-dark);
-  z-index: -1;
-}
-
-.download__container {
-  padding: 0 1rem;
-  display: grid;
-  background-color: var(--primary-color);
-  border-radius: 1rem;
-}
-
-.download__content {
-  padding-block: 5rem;
-}
-
-.download__content .section__header {
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
-.download__links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.download__links img {
-  max-width: 150px;
-}
-
-.download__image {
-  display: none;
-}
-
+ 
 .news {
   background-color: var(--text-dark);
 }
