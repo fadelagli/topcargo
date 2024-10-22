@@ -94,41 +94,6 @@
           font-size: 1.5rem;
         }
       }
-      
-
-      /* Scroll to Top Button */
-#scrollTopBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed position */
-    bottom: 20px; /* Place it at the bottom */
-    right: 30px; /* Place it 30px from the right */
-    z-index: 99; /* Make sure it does not overlap other elements */
-    font-size: 18px; /* Set a font size */
-    background-color: #ff9801; /* Orange background */
-    color: white; /* White text */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    cursor: pointer; /* Pointer/hand icon on hover */
-    padding: 15px; /* Add some padding */
-    border-radius: 10px; /* Rounded corners */
-    transition: opacity 0.4s ease; /* Smooth transition */
-  }
-  
-  /* Hover effects */
-  #scrollTopBtn:hover {
-    background-color: #e68901; /* Darker orange on hover */
-  }
-  
-  /* Show the button when the user scrolls down */
-  @media (max-width: 768px) {
-    #scrollTopBtn {
-      padding: 10px;
-      font-size: 14px;
-      right: 20px;
-      bottom: 15px;
-    }
-  }
-
 
   /* Base Styles */
 .home__container {
@@ -281,5 +246,71 @@
   .download-btn {
     font-size: 0.9rem;
     padding: 12px 25px;
+  }
+}
+
+ /* Scroll to Top Button Styling */
+ .scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(45deg, #ff9801 , #ff9801 );
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s, transform 0.3s;
+  z-index: 1000;
+}
+
+.scroll-to-top.show {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.scroll-to-top:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+}
+
+* For very small screens (less than 480px) */
+@media (max-width: 480px) {
+  .scroll-to-top {
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+    bottom: 15px;
+    right: 15px;
+  }
+}
+
+/* For tablets and medium screens (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .scroll-to-top {
+    width: 45px;
+    height: 45px;
+    font-size: 22px;
+    bottom: 25px;
+    right: 25px;
+  }
+}
+
+/* For large screens (desktops, laptops) */
+@media (min-width: 1025px) {
+  .scroll-to-top {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    bottom: 30px;
+    right: 30px;
   }
 }
