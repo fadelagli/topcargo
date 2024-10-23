@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Top Cargo, Top Cargo International, Entreprise de Transport logistique, Entreprise de Fret maritime , Entrprise de Cargo , Entreprise de Fret aérien , Fournisseurs Chine Afrique">
+        <meta name="Top Cargo" content="Top Cargo">
+
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -13,7 +16,7 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="style2.css">
-    <title>Top Cargo International</title>
+    <title>Top Cargo, Top Cargo International, Entreprise de Cargo, Fret aérien, Fret maritime,</title>
     <link rel="icon" href="./assets/top-cargo-logo.png"  type="image/x-icon" >
   </head>
   <body>
@@ -400,26 +403,46 @@
   <p>Veuillez sélectionner et télécharger le formulaire correspondant à votre méthode d'expédition. Choisissez l'option bateau ou avion ci-dessous pour organiser vos envois. Une fois télécharger imprimer et remplissez puis coller sur vos colis pour faciliter le tracking</p>
   
   <div class="download-buttons">
-    <button class="download-btn" onclick="window.location.href='formulairebateau.pdf';">
+    <button class="download-btn"  onclick="openForm('https://forms.gle/cbFTAB4CXu4m3B4k8');">
       Téléchargement 1 - Formulaire Bateau
     </button>
-    <button class="download-btn" onclick="window.location.href='formulaireavion.pdf';">
+    <p>Adresse dépôt Bateau :<br>
+      No.16 Lishui East Industrial Park, Shengli Community,<br>
+      Lishui Town, Nanhai District, Foshan City, Guangdong Province<br>
+      广东省佛山市南海区里水镇胜利社区里水东部工业园16号
+    </p>
+    <button class="download-btn"  onclick="openForm('https://forms.gle/HfMsReNy2frJFf2z6');">
       Téléchargement 2 - Formulaire Avion
     </button>
+    <p>Adresse dépôt Avion :<br>
+      Room 106, Hengsheng Building C,<br>
+      No.207 Huan Shi Mid Road, Yue Xiu District,<br>
+      Guangzhou, China<br>
+      广州市越秀区环市中路207号恒生大楼C座106室
+    </p>
   </div>
 </header>
 
-    <section class="news" id="contact">
-      <div class="section__container news__container">
-        <h2 class="section__header">Stay up to date on all the latest news.</h2>
-        <form action="/">
-          <input type="text" placeholder="Your email" />
-          <button class="btn">
-            <i class="ri-send-plane-fill"></i>
-          </button>
-        </form>
-      </div>
-    </section>
+<script>
+  function openForm(formUrl) {
+    window.open(formUrl, '_blank'); // Ouvre le formulaire dans un nouvel onglet
+  }
+</script>
+
+
+<!--------------Adress Section -------------------->
+
+<section class="news" id="contact">
+  <div class="section__container news__container">
+    <h2 class="section__header">Restez Informé sur les dernières actualités.</h2>
+    <form action="https://formspree.io/f/xwpkpqbe" method="POST">
+      <input type="email" name="email" placeholder="Votre email" required />
+      <button class="btn" type="submit">
+        <i class="ri-send-plane-fill"></i>
+      </button>
+    </form>
+  </div>
+</section>
 
     <footer>
       <div class="section__container footer__container">
@@ -504,5 +527,18 @@
     });
   };
 </script>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/67195d972480f5b4f5928bb4/1iathb6as';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
   </body>
 </html>
