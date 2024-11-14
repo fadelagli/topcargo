@@ -16,7 +16,8 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="style2.css">
-    <title>Top Cargo, Top Cargo International,Fret maritime Afrique,Fret aérien express Chine-Afrique,Services de logistique internationaux,Transport de marchandises Chine vers Afrique,Expédition de colis rapide Afrique,Entreprise de Cargo, Fret aérien, Fret maritime,</title>
+    <link rel="stylesheet" href="adstyle.css">
+    <title>TopCargo, TopCargo International,Envoi de colis Abidjan, Niamey, Lomé, Fret maritime Chine-Afrique,Fret aérien express Chine-Afrique, Services de logistique international, Transport de marchandises Chine vers Afrique,Expédition de colis rapide Afrique,Entreprise de Cargo, Fret aérien, Fret maritime,</title>
     <link rel="icon" href="./assets/top-cargo-logo.png"  type="image/x-icon" >
   </head>
   <body>
@@ -38,6 +39,7 @@
           <li><a href="#about">Nos Services</a></li>
           <li><a href="#process">Notre Processus</a></li>
           <li><a href="#pays">Pays d'expéditions</a></li>
+          <li><a href="#download">Inscription</a></li>
           <li><a href="#contact">Contacts</a></li>
         </ul>
         <div class="nav__btn">
@@ -75,7 +77,7 @@
 
   <div class="info__group">
     <label>Dépôt du colis:</label>
-    <p>Le colis est expédié 24h après</p>
+    <p>Le colis est expédié 72H après</p>
   </div>
 
   <button class="btn" onclick="window.location.href='tel:+8613128285882';">
@@ -157,7 +159,7 @@
         <div class="range__card">
           <img src="assets/suivi-coli.png" alt="Fournisseur Chine vers l'Afrique avec Top Cargo" />
           <div class="range__details">
-            <h4>B2B Achetez des articles en Chine</h4>
+            <h4>Service de Gestion et tracking de colis</h4>
             <a href="#"><i class="ri-arrow-right-line"></i></a>
           </div>
         </div>
@@ -368,7 +370,7 @@
     <section class="country__container">
       
       <div class="country__card">
-        <a href="https://wa.me/008613128285882" target="_blank">
+        <a href="https://wa.me/8619584521570" target="_blank">
           <img src="https://flagcdn.com/w320/cn.png" alt="Fret maritime aérien express de la Chine vers l'Afrique avec Top Cargo">
           <h3>Chine</h3>
         </a>
@@ -400,19 +402,20 @@
 <!-------------------------------------- -------------------------->
 <header class="download-header" id="download">
   <h2>Téléchargez vos Formulaires de Transport</h2>
-  <p>Veuillez sélectionner et télécharger le formulaire correspondant à votre méthode d'expédition. Choisissez l'option bateau ou avion ci-dessous pour organiser vos envois. Une fois télécharger imprimer et remplissez puis coller sur vos colis pour faciliter le tracking</p>
+  <p>Veuillez sélectionner et télécharger le formulaire correspondant à votre méthode d'expédition. Choisissez l'option bateau ou avion ci-dessous pour organiser vos envois. Une fois télécharger; vous recevrez une copie automatiquement par mail, n'oubliez pas de fournisseur nos adresses d'expéditions à vos collaborateurs ( Transitaires, Fournisseurs) afin que votre colis nous sois transmit , ceci permettra de  faciliter le tracking et be bien vous satisfaire.</p>
   
   <div class="download-buttons">
     <button class="download-btn"  onclick="openForm('https://forms.gle/cbFTAB4CXu4m3B4k8');">
-      Téléchargement 1 - Formulaire Bateau
+      Bouton -1 : Remplissez le formulaire et obtenez une copie pour Fret maritime
     </button>
     <p>Adresse dépôt Bateau :<br>
-      No.16 Lishui East Industrial Park, Shengli Community,<br>
-      Lishui Town, Nanhai District, Foshan City, Guangdong Province<br>
-      广东省佛山市南海区里水镇胜利社区里水东部工业园16号
+       Room 106, Hengsheng Building C,<br>
+      No.207 Huan Shi Mid Road, Yue Xiu District,<br>
+      Guangzhou, China<br>
+      广州市越秀区环市中路207号恒生大楼C座106室
     </p>
     <button class="download-btn"  onclick="openForm('https://forms.gle/HfMsReNy2frJFf2z6');">
-      Téléchargement 2 - Formulaire Avion
+      Bouton -2 - Remplissez le formulaire et obtenez une copie pour Fret aérien
     </button>
     <p>Adresse dépôt Avion :<br>
       Room 106, Hengsheng Building C,<br>
@@ -497,6 +500,51 @@
     <script src="main.js"></script>
        <!-- Scroll to Top Button -->
 <a href="#" class="scroll-to-top" id="scrollToTopBtn" title="Revenir en haut">↑</a>
+<!-- Fenêtre publicitaire (Modal) -->
+<div id="adModal" class="modal">
+  <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+
+      <!-- Carrousel d'images -->
+      <div class="carousel" id="carousel">
+          <img src="./assets/Intro.png" alt="Publicité 1">
+          <img src="./assets/p2.png" alt="Publicité 2">
+          <img src="./assets/p1.png" alt="Publicité 3">
+          <img src="./assets/p3.png" alt="Publicité 4">
+          <img src="./assets/p4.png" alt="Publicité 5">
+          <!-- Ajoutez d'autres images si nécessaire -->
+      </div>
+  </div>
+</div>
+
+<!---------------Ads Javascript--------------------->
+<script>
+  // Fonction pour afficher le modal lors du chargement de la page
+  window.onload = function() {
+      document.getElementById('adModal').style.display = 'block';
+      startCarousel(); // Démarrer le carrousel automatiquement
+  };
+
+  // Fonction pour fermer le modal
+  function closeModal() {
+      document.getElementById('adModal').style.display = 'none';
+  }
+
+  // Carrousel automatique
+  let currentIndex = 0;
+  function startCarousel() {
+      const images = document.querySelectorAll('#carousel img');
+      if (images.length === 0) return;
+
+      images[currentIndex].style.display = 'block'; // Afficher la première image
+
+      setInterval(() => {
+          images[currentIndex].style.display = 'none'; // Cacher l'image actuelle
+          currentIndex = (currentIndex + 1) % images.length; // Passer à l'image suivante
+          images[currentIndex].style.display = 'block'; // Afficher la nouvelle image
+      }, 3000); // Changer d'image toutes les 3 secondes
+  }
+</script>
 
 <script>
   // Get the button
@@ -517,6 +565,7 @@
       scrollToTopBtn.classList.remove("show");
     }
   }
+  
 
   // Smooth scroll to top when the button is clicked
   scrollToTopBtn.onclick = function (e) {
